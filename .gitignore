@@ -1,0 +1,14 @@
+# Publication repository: explicit allowlist; source and private files are excluded.
+*
+!README.md
+!README.zh-CN.md
+!README_EN.md
+!RELEASE_NOTES.md
+!SHA256SUMS
+!.gitignore
+!.github/
+!.github/FUNDING.yml
+!assets/
+!assets/dro-icon.png
+!assets/donate-bank.jpg
+!assets/donate-wechat.jpg
