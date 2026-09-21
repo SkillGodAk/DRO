@@ -2,22 +2,26 @@
 
 [繁體中文](README.md) | **简体中文** | [English](README_EN.md)
 
-DRO 提供独立的 **Chrome 网页版扩展（0.7.5）** 与 **Windows 桌面版（20260921 打包）**。公开仓库只提供产品介绍和成品下载，不公开开发工作区与独立源码文件。
+DRO 分为独立的 **Windows 桌面版**和 **Chrome 网页版**，两者不是同一种拦截方式。本仓库提供成品、说明与作者赞助信息，不公开私人开发工作区及独立桌面源码。
 
-## 下载
+## 两个版本有什么区别？
 
-[GitHub Releases](https://github.com/SkillGodAk/DRO/releases)
+| 项目 | 桌面版 | 网页版 |
+| --- | --- | --- |
+| 适用环境 | Windows 抖音客户端 | Chrome 上的 www.douyin.com／live.douyin.com |
+| 优化方式 | 在系统侧观察节点与连接质量，通过网络过滤暂时屏蔽不良节点 | 观察网页播放器状态，在卡顿时尝试页面已提供的同一视频备用来源 |
+| 限制 | 需要管理员权限才能控制相关系统功能 | 受浏览器及网站播放器限制，无法像桌面版那样直接控制系统网络路由 |
 
-- `DRO_Web_Playback_0.7.5.zip`：Chrome 116+；适用于 www.douyin.com 与 live.douyin.com。
-- `DRO_Desktop_20260921.zip`：Windows 抖音桌面程序。
+**桌面版的节点控制更完整。** 网页版实现条件更复杂，只有页面提供有效备用来源时才能尝试恢复，改善空间和效果更难保证；网页版本不能代替桌面版。两者均无法保证任何网络环境完全不卡顿。
 
-## 功能与安装
+## 下载和安装
 
-网页版显示播放状态、下一条就绪信息，并在卡顿时尝试播放器提供的同视频备用来源。下载解压后打开 `chrome://extensions`，启用开发者模式，选择“加载已解压的扩展程序”，指定含 `manifest.json` 的文件夹。Chrome 扩展运行必须包含 JavaScript，因此 ZIP 内相关脚本可被查看。
+[前往 GitHub Releases](https://github.com/SkillGodAk/DRO/releases/latest)
 
-桌面版按节点质量进行监测和本地学习，可暂时避开不稳定节点。完整解压后运行 `DRO_Desktop/DouyinRouteOptimizer.cmd`，根据提示授权管理员权限并配置。不要单独移动 EXE。
+- `DRO_Desktop_20260921.zip`：Windows 桌面版。完整解压，运行 `DRO_Desktop/DouyinRouteOptimizer.cmd`，根据提示授予管理员权限，保留 `Core/` 和 `Data/` 文件夹。
+- `DRO_Web_0.7.5.zip`：Chrome 网页版 0.7.5。解压后进入 `chrome://extensions`，开启开发者模式，加载包含 `manifest.json` 的文件夹；支持 Chrome 116+。
 
-无法保证所有网络环境零卡顿。文件校验请查看 [SHA256SUMS](SHA256SUMS)，版本说明见 [RELEASE_NOTES.md](RELEASE_NOTES.md)。
+Chrome 扩展需要 JavaScript 才能运行，因此网页版 ZIP 内的脚本可以查看。
 
 ## 赞助作者
 

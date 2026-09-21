@@ -1,35 +1,38 @@
 <p align="center"><img src="assets/dro-icon.png" alt="DRO" width="120"></p>
 
-# DRO — Douyin Route Optimizer
+# DRO — 抖音播放優化工具
 
 **繁體中文** | [简体中文](README.zh-CN.md) | [English](README_EN.md)
 
-DRO 是獨立開發的抖音播放輔助工具，提供 **網頁版 Chrome 擴充功能**與 **Windows 桌面版**，兩者分開安裝與運作。本公開倉庫只提供產品資訊及已封裝成品，不公開開發工作區與獨立原始碼檔案。
+DRO 提供兩種獨立工具：**Windows 抖音桌面版**與**Chrome 抖音網頁版**。兩者的運作方式不同，請依照使用的抖音版本選擇對應下載；這個公開專案提供介紹及安裝成品，不公開完整開發工作區與獨立桌面版原始碼。
 
-## 版本與下載
+## 桌面版與網頁版有什麼不同？
 
-[**前往 GitHub Releases 下載成品**](https://github.com/SkillGodAk/DRO/releases)
-
-| 版本 | 適用環境 | 發佈檔案 |
+| 項目 | Windows 桌面版 | Chrome 網頁版 |
 | --- | --- | --- |
-| 網頁版 0.7.5 | Chrome 116+；www.douyin.com 與 live.douyin.com | `DRO_Web_Playback_0.7.5.zip` |
-| 桌面版（20260921 封裝） | Windows；抖音桌面程式 | `DRO_Desktop_20260921.zip` |
+| 適用對象 | Windows 抖音桌面程式 | Chrome 的 www.douyin.com／live.douyin.com |
+| 介入方式 | 在 Windows 端監測連線與節點品質，依判斷暫時封鎖不良節點、促使重新選路 | 在網頁播放器的可用範圍內觀察播放狀態，卡住時嘗試頁面已提供的同片備援來源 |
+| 控制範圍 | 可使用 Windows 網路過濾機制；需要系統管理員授權 | 受瀏覽器、網站播放器、媒體網址與頁面提供的來源限制，不會直接控制系統網路路由 |
+| 使用方式 | 執行程式，可選靜默或顯示監測資訊 | 安裝擴充功能，可在頁面開關並查看播放／下一支狀態 |
 
-## 功能
+**如何選擇？** 使用 Windows 抖音桌面程式，請下載桌面版：它能直接介入節點封鎖，控制能力較完整。網頁版要受到 Chrome 與抖音網頁播放器限制，備援切換條件較苛刻，**改善空間和穩定性不如桌面版容易掌握**；網頁版不能當成桌面版的等效替代品。兩者都不能保證所有影片或所有網路環境完全不卡頓，也不會憑空增加 CDN 頻寬。
 
-**網頁版：** 顯示播放與下一支就緒狀態；遇到卡頓時嘗試播放器已提供的同片備援來源；包含直播狀態顯示。設計上避免全頁網路攔截和永久循環監測。
+## 下載成品
 
-**桌面版：** 觀察節點品質、記錄本機學習結果，並可依設定暫時避開品質不佳的節點；包含靜默與可視監測模式。第一次啟動可能要求系統管理員權限。
+[**前往 GitHub Releases**](https://github.com/SkillGodAk/DRO/releases/latest)
 
-兩版均無法保證任何網路條件下完全零卡頓；實際體驗取決於來源、所在地與網路狀態。
+| 下載檔案 | 版本與用途 |
+| --- | --- |
+| `DRO_Desktop_20260921.zip` | Windows 桌面版，2026/09/21 封裝 |
+| `DRO_Web_0.7.5.zip` | Chrome 網頁版 0.7.5，適用 Chrome 116 以上 |
 
-## 安裝
+## 安裝方式
 
-**網頁版：** 下載並解壓 `DRO_Web_Playback_0.7.5.zip` 至固定資料夾，開啟 Chrome 的 `chrome://extensions` → 啟用「開發人員模式」→「載入未封裝項目」，選取含 `manifest.json` 的解壓資料夾。擴充功能的 JavaScript 是 Chrome 執行所必需，隨 ZIP 提供且可查看；本倉庫不另外公開開發原始碼。
+**桌面版：** 下載 `DRO_Desktop_20260921.zip`，完整解壓縮，執行 `DRO_Desktop/DouyinRouteOptimizer.cmd`。請保留 `Core/` 及 `Data/` 資料夾，首次使用可能要求系統管理員權限。桌面版可依設定開啟靜默監測、調整冷卻時間或查看節點品質紀錄。
 
-**桌面版：** 完整解壓 `DRO_Desktop_20260921.zip`，雙擊 `DRO_Desktop/DouyinRouteOptimizer.cmd`，依程式提示操作。請保留 `Core/` 與 `Data/` 資料夾，不要單獨取出 EXE。
+**網頁版：** 下載 `DRO_Web_0.7.5.zip` 並解壓到固定位置。進入 Chrome `chrome://extensions`，啟用「開發人員模式」，按「載入未封裝項目」，選擇含 `manifest.json` 的資料夾。網頁版提供播放／下一支就緒顯示、有限次卡頓恢復及直播狀態顯示；只有播放器提供可用的同片備援來源時才可能切換。
 
-發佈檔案 SHA256 請見 [SHA256SUMS](SHA256SUMS)，版本變更見 [RELEASE_NOTES.md](RELEASE_NOTES.md)。
+> Chrome 擴充功能執行時必須包含 JavaScript，因此網頁版 ZIP 中的腳本可被查看；本專案不另外上傳私人開發工作區與桌面版原始碼。
 
 ## 贊助作者
 

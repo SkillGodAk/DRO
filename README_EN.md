@@ -1,21 +1,27 @@
-# DRO — Douyin Route Optimizer
+# DRO — Douyin Playback Optimizer
 
 [繁體中文](README.md) | [简体中文](README.zh-CN.md) | **English**
 
-DRO offers two separate Douyin playback tools: a Chrome web extension (v0.7.5) and a Windows desktop utility (20260921 package). This public repository contains product documentation and downloadable builds, not the private development workspace or standalone source files.
+DRO provides separate Windows desktop and Chrome web playback tools. This public repository contains release packages, usage information and author support links, not the private development workspace or standalone desktop source code.
 
-## Downloads
+## Desktop vs. web
 
-[GitHub Releases](https://github.com/SkillGodAk/DRO/releases)
+| | Windows desktop | Chrome web |
+| --- | --- | --- |
+| Works with | Windows Douyin desktop application | www.douyin.com / live.douyin.com in Chrome |
+| Technique | Checks connection/node quality and temporarily blocks poor nodes using Windows network filtering | Watches webpage player state and, after a stall, may retry an alternative source already offered for the same video |
+| Limitations | Requires administrator permission for system-level network controls | Browser and website restrictions prevent equivalent system-wide routing control; alternatives are not always available |
 
-- `DRO_Web_Playback_0.7.5.zip`: Chrome 116+ for www.douyin.com and live.douyin.com.
-- `DRO_Desktop_20260921.zip`: Windows desktop Douyin client.
+**Desktop has more direct node-control capability.** The web edition faces stricter playback and browser constraints, so its potential improvement is less predictable and it is not an equivalent substitute for the desktop tool. Neither guarantees zero buffering across all videos, sources or networks.
 
-The extension displays playback/next-video readiness and can try alternative sources already supplied for the same video when playback stalls. To install, unzip and open `chrome://extensions`, enable Developer mode, select **Load unpacked**, and choose the directory containing `manifest.json`. Executable JavaScript is inherently included in the extension ZIP and remains inspectable.
+## Downloads and installation
 
-The Windows utility monitors local playback node quality and can temporarily avoid poor nodes. Unzip the desktop package and run `DRO_Desktop/DouyinRouteOptimizer.cmd`, accepting the administrator prompt if shown. Keep the `Core` and `Data` directories intact.
+[GitHub Releases](https://github.com/SkillGodAk/DRO/releases/latest)
 
-Neither tool guarantees completely uninterrupted playback on every network. Check [SHA256SUMS](SHA256SUMS) and [release notes](RELEASE_NOTES.md).
+- `DRO_Desktop_20260921.zip` — Windows desktop package. Extract fully and launch `DRO_Desktop/DouyinRouteOptimizer.cmd`; keep `Core/` and `Data/` intact. Administrator permission may be required.
+- `DRO_Web_0.7.5.zip` — Chrome web extension v0.7.5, Chrome 116+. Extract to a fixed directory, open `chrome://extensions`, enable Developer mode and **Load unpacked** from the folder containing `manifest.json`.
+
+The web extension necessarily contains inspectable JavaScript in its runnable ZIP.
 
 ## Support the author
 
@@ -25,4 +31,4 @@ Bank transfer QR:<br><img src="assets/donate-bank.jpg" width="300" alt="Bank don
 
 WeChat QR:<br><img src="assets/donate-wechat.jpg" width="300" alt="WeChat donation">
 
-Independent third-party tool; not officially affiliated with or endorsed by Douyin or ByteDance.
+DRO is an independent third-party tool and is not officially affiliated with or endorsed by Douyin or ByteDance.
