@@ -1,8 +1,17 @@
-# DRO Release Notes
+# DRO 版本說明
 
-## First public release — Web 0.7.5 / Desktop package 20260921
+## v0.7.5 — 首次公開發佈
 
-- **Web 0.7.5:** Playback-state panel; next-video readiness visibility; bounded stalled-playback rescue using same-video alternative sources when available; support for recommendation pages and live.douyin.com. No guarantee of zero buffering.
-- **Desktop package 20260921:** Compiled Windows launcher and core, default blank settings and Traditional Chinese, Simplified Chinese and English guides. No standalone PowerShell or C# source files or local learning data in this package.
-- Source development workspace, browser profile, logs, credentials, machine-specific configuration and experimental/negative versions are **not published**.
-- The Chrome extension package necessarily includes executable JavaScript; its implementation cannot be hidden in a functional unpacked extension.
+### 桌面版（2026/09/21 封裝）
+
+- Windows 抖音桌面程式專用；監測連線與節點品質，依設定暫時封鎖不良節點、促使重新選路。
+- 提供靜默模式與顯示監測資訊的模式，支援本機節點學習及冷卻時間設定。
+- 發佈包包含編譯後的啟動程式、核心檔案和繁體／簡體／英文使用說明，不包含獨立原始碼與本機學習紀錄。
+
+### 網頁版 0.7.5
+
+- Chrome 擴充功能，可顯示播放狀態、下一支就緒情況與直播狀態。
+- 播放卡住時，若網頁播放器提供同片備援來源，會有限次嘗試恢復；不對整頁網路請求做全域攔截。
+- 受瀏覽器及網頁播放器限制，無法等同桌面版的系統節點控制，也無法保證所有影片都不會卡頓。
+
+開發原始資料、Chrome 個人設定、快取、紀錄及本機特定設定不公開。網頁擴充套件執行必須包含 JavaScript，因此成品中的腳本可查看。
