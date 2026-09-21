@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/dro-icon.png" alt="DRO" width="120"></p>
+<p align="center"><img src="assets/dro-icon-seamless.png" alt="DRO" width="120"></p>
 
 # DRO — 抖音播放優化工具
 
@@ -30,7 +30,7 @@ DRO 提供兩種獨立工具：**Windows 抖音桌面版**與**Chrome 抖音網�
 
 **桌面版：** 下載 `DRO_Desktop_20260921.zip`，完整解壓縮，執行 `DRO_Desktop/DouyinRouteOptimizer.cmd`。請保留 `Core/` 及 `Data/` 資料夾，首次使用可能要求系統管理員權限。桌面版可依設定開啟靜默監測、調整冷卻時間或查看節點品質紀錄。
 
-**網頁版：** 下載 `DRO_Web_0.7.5.zip` 並解壓到固定位置。進入 Chrome `chrome://extensions`，啟用「開發人員模式」，按「載入未封裝項目」，選擇含 `manifest.json` 的資料夾。網頁版提供播放／下一支就緒顯示、有限次卡頓恢復及直播狀態顯示；只有播放器提供可用的同片備援來源時才可能切換。
+**網頁版：** 下載 `DRO_Web_0.7.5.zip` 並解壓到固定位置；解壓後會先看到唯一的 `DRO` 資料夾，`manifest.json` 位於 `DRO/manifest.json`。進入 Chrome `chrome://extensions`，啟用「開發人員模式」，按「載入未封裝項目」，**選取 `DRO` 資料夾**。網頁版提供播放／下一支就緒顯示、有限次卡頓恢復及直播狀態顯示；只有播放器提供可用的同片備援來源時才可能切換。
 
 > Chrome 擴充功能執行時必須包含 JavaScript，因此網頁版 ZIP 中的腳本可被查看；本專案不另外上傳私人開發工作區與桌面版原始碼。
 

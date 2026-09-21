@@ -19,7 +19,7 @@ DRO 分为独立的 **Windows 桌面版**和 **Chrome 网页版**，两者不是
 [前往 GitHub Releases](https://github.com/SkillGodAk/DRO/releases/latest)
 
 - `DRO_Desktop_20260921.zip`：Windows 桌面版。完整解压，运行 `DRO_Desktop/DouyinRouteOptimizer.cmd`，根据提示授予管理员权限，保留 `Core/` 和 `Data/` 文件夹。
-- `DRO_Web_0.7.5.zip`：Chrome 网页版 0.7.5。解压后进入 `chrome://extensions`，开启开发者模式，加载包含 `manifest.json` 的文件夹；支持 Chrome 116+。
+- `DRO_Web_0.7.5.zip`：Chrome 网页版 0.7.5。解压后先得到唯一的 `DRO` 文件夹，`manifest.json` 位于 `DRO/manifest.json`；进入 `chrome://extensions`，开启开发者模式，加载 **`DRO` 文件夹**；支持 Chrome 116+。
 
 Chrome 扩展需要 JavaScript 才能运行，因此网页版 ZIP 内的脚本可以查看。
 
