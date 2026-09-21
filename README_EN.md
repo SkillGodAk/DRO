@@ -19,7 +19,7 @@ DRO provides separate Windows desktop and Chrome web playback tools. This public
 [GitHub Releases](https://github.com/SkillGodAk/DRO/releases/latest)
 
 - `DRO_Desktop_20260921.zip` — Windows desktop package. Extract fully and launch `DRO_Desktop/DouyinRouteOptimizer.cmd`; keep `Core/` and `Data/` intact. Administrator permission may be required.
-- `DRO_Web_0.7.5.zip` — Chrome web extension v0.7.5, Chrome 116+. Extract to a fixed directory, open `chrome://extensions`, enable Developer mode and **Load unpacked** from the folder containing `manifest.json`.
+- `DRO_Web_0.7.5.zip` — Chrome web extension v0.7.5, Chrome 116+. Extract to a fixed directory; the ZIP contains one top-level `DRO` folder with `DRO/manifest.json` inside. Open `chrome://extensions`, enable Developer mode and **Load unpacked**, then select the `DRO` folder.
 
 The web extension necessarily contains inspectable JavaScript in its runnable ZIP.
 
