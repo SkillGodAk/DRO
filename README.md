@@ -24,13 +24,13 @@ DRO 提供兩種獨立工具：**Windows 抖音桌面版**與**Chrome 抖音網�
 | 下載檔案 | 版本與用途 |
 | --- | --- |
 | `DRO_Desktop_20260921.zip` | Windows 桌面版，2026/09/21 封裝 |
-| `DRO_Web_0.7.5.zip` | Chrome 網頁版 0.7.5，適用 Chrome 116 以上 |
+| `DRO_Web_0.7.6.zip` | Chrome 網頁版 0.7.6，適用 Chrome 116 以上 |
 
 ## 安裝方式
 
 **桌面版：** 下載 `DRO_Desktop_20260921.zip`，完整解壓縮，執行 `DRO_Desktop/DouyinRouteOptimizer.cmd`。請保留 `Core/` 及 `Data/` 資料夾，首次使用可能要求系統管理員權限。桌面版可依設定開啟靜默監測、調整冷卻時間或查看節點品質紀錄。
 
-**網頁版：** 下載 `DRO_Web_0.7.5.zip` 並解壓到固定位置；解壓後會先看到唯一的 `DRO` 資料夾，`manifest.json` 位於 `DRO/manifest.json`。進入 Chrome `chrome://extensions`，啟用「開發人員模式」，按「載入未封裝項目」，**選取 `DRO` 資料夾**。網頁版提供播放／下一支就緒顯示、有限次卡頓恢復及直播狀態顯示；只有播放器提供可用的同片備援來源時才可能切換。
+**網頁版：** 下載 `DRO_Web_0.7.6.zip` 並解壓到固定位置；解壓後會先看到唯一的 `DRO` 資料夾，`manifest.json` 位於 `DRO/manifest.json`。進入 Chrome `chrome://extensions`，啟用「開發人員模式」，按「載入未封裝項目」，**選取 `DRO` 資料夾**。0.7.6 新增直播回放模式與自動更新；載入後再執行一次 `DRO/updater/Install-AutoUpdate.cmd`，之後 GitHub 發佈較新的正式版時，DRO 會自動下載、驗證、覆蓋舊版並重新載入。已安裝 0.7.5 的使用者這一次仍需手動換成 0.7.6。
 
 > Chrome 擴充功能執行時必須包含 JavaScript，因此網頁版 ZIP 中的腳本可被查看；本專案不另外上傳私人開發工作區與桌面版原始碼。
 
