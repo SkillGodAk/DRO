@@ -25,10 +25,10 @@ The web extension necessarily contains inspectable JavaScript in its runnable ZI
 
 ## Support the author
 
-[Buy Me a Coffee](https://buymeacoffee.com/SkillGodAK)
+International support:`r`n`r`n<a href="https://buymeacoffee.com/SkillGodAK"><img src="assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
-Bank transfer QR:<br><img src="assets/donate-bank.jpg" width="300" alt="Bank donation">
+Bank transfer QR:<br><img src="assets/donate-bank.jpg" width="180" alt="Bank donation">
 
-WeChat QR:<br><img src="assets/donate-wechat.jpg" width="300" alt="WeChat donation">
+WeChat QR:<br><img src="assets/donate-wechat.jpg" width="180" alt="WeChat donation">
 
 DRO is an independent third-party tool and is not officially affiliated with or endorsed by Douyin or ByteDance.
