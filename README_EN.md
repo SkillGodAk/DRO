@@ -25,7 +25,9 @@ The web extension necessarily contains inspectable JavaScript in its runnable ZI
 
 ## Support the author
 
-International support:`r`n`r`n<a href="https://buymeacoffee.com/SkillGodAK"><img src="assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
+International support:
+
+<a href="https://buymeacoffee.com/SkillGodAK"><img src="assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
 Bank transfer QR:<br><img src="assets/donate-bank.jpg" width="180" alt="Bank donation">
 
