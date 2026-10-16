@@ -29,8 +29,6 @@ Chrome 扩展需要 JavaScript 才能运行，因此网页版 ZIP 内的脚本�
 
 <a href="https://buymeacoffee.com/SkillGodAK"><img src="assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
-银行收款：<br><img src="assets/donate-bank.jpg" width="180" alt="银行收款">
-
 微信收款：<br><img src="assets/donate-wechat.jpg" width="180" alt="微信收款">
 
 DRO 为独立第三方工具，并非抖音或字节跳动官方产品。
