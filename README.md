@@ -42,9 +42,6 @@ DRO 提供兩種獨立工具：**Windows 抖音桌面版**與**Chrome 抖音網�
 
 <a href="https://buymeacoffee.com/SkillGodAK"><img src="assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
-**銀行收款：**
-
-<img src="assets/donate-bank.jpg" alt="銀行贊助 QR Code" width="180">
 
 **微信收款：**
 
