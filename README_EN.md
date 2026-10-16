@@ -29,8 +29,6 @@ International support:
 
 <a href="https://buymeacoffee.com/SkillGodAK"><img src="assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
-Bank transfer QR:<br><img src="assets/donate-bank.jpg" width="180" alt="Bank donation">
-
 WeChat QR:<br><img src="assets/donate-wechat.jpg" width="180" alt="WeChat donation">
 
 DRO is an independent third-party tool and is not officially affiliated with or endorsed by Douyin or ByteDance.
