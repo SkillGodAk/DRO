@@ -23,3 +23,4 @@ DRO provides separate Windows desktop and Chrome web playback tools. This public
 
 The web extension necessarily contains inspectable JavaScript in its runnable ZIP.
 
+DRO is an independent third-party tool and is not officially affiliated with or endorsed by Douyin or ByteDance.
