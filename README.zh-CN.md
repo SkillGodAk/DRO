@@ -25,10 +25,17 @@ Chrome 扩展需要 JavaScript 才能运行，因此网页版 ZIP 内的脚本�
 
 ## 赞助作者
 
-国外赞助：
+### 国外赞助
 
 <a href="https://buymeacoffee.com/SkillGodAK"><img src="assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
-微信收款：<br><img src="assets/donate-wechat.jpg" width="180" alt="微信收款">
+### 微信赞助
+
+<img src="assets/donate-wechat.jpg" alt="微信赞助二维码" width="180">
+
+### 台湾赞助
+
+<img src="https://raw.githubusercontent.com/SkillGodAk/SkillGodAk/main/assets/donate-taiwan.jpg" alt="台湾赞助二维码" width="180">
+
 
 DRO 为独立第三方工具，并非抖音或字节跳动官方产品。
