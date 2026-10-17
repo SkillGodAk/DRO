@@ -38,14 +38,17 @@ DRO 提供兩種獨立工具：**Windows 抖音桌面版**與**Chrome 抖音網�
 
 如果 DRO 對你有幫助，歡迎自願支持獨立開發者。
 
-**國外贊助：**
+### 國外贊助
 
 <a href="https://buymeacoffee.com/SkillGodAK"><img src="assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
-
-**微信收款：**
+### 微信贊助
 
 <img src="assets/donate-wechat.jpg" alt="微信贊助 QR Code" width="180">
+
+### 台灣贊助
+
+<img src="https://raw.githubusercontent.com/SkillGodAk/SkillGodAk/main/assets/donate-taiwan.jpg" alt="台灣贊助 QR Code" width="180">
 
 ---
 
